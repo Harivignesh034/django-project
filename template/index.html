@@ -1,0 +1,1252 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewpointer" content="width=device-width, inital-scale=1.0">
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'queries1.css' %}">
+    <link rel="stylesheet" href="{% static 'animate.css'%}">
+    <link rel="stylesheet"type="text/css" href="{% static 'aos.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Libre+Baskerville:ital,wght@0,700;1,400&family=RocknRoll+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="animation" type="text/css"href="{% static 'animate.css' %}">
+    <link rel="aos" type="text/css"href="{% static 'aos.css' %}">
+    
+    <title>DHAVAMANI</title>
+    <style>
+      *{
+        margin: 0rem;
+        padding: 0rem;
+        box-sizing: border-box;
+        max-width: 100%;
+      
+        
+        
+         
+    }
+    .clearfix {zoom: 1;}
+    .clearfix:after {
+        content: '.';
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    
+    
+    .dropbtn {
+     
+      color: white;
+      border-radius: 1rem;
+      padding: 7px;
+      font-size: 16px;
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      padding: 2rem;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      color: #fff;
+      border-radius: 1rem;
+      background-color: #00000000;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: rgb(255, 255, 255);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      border-radius: 1rem;
+    color: #000;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+      background-color: #767776;}
+    
+   
+    
+    .header{
+        height: 95vh;
+        max-width:100%;
+        background-image:linear-gradient(to right,rgba(133, 133, 133, 0.322),rgba(75, 3, 3, 0.226)), url(static/img/laughingbuddha.jpg);                       
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: top;
+        
+        
+    }
+    .logsign{
+      text-align: center;
+      
+    }
+    .logsign {
+      padding: 10px;
+    }
+    .button1{ 
+        color:black;
+        
+        
+        font-family: 'Akaya Telivigala';
+        font-size:1.5rem;
+       
+        margin-top: 17rem;
+        margin-left: 10px;
+        text-align: center;
+        border-radius: 10px;
+       padding: 0.6rem;
+       padding-left: 20px;
+       display: inline-block;
+      
+     
+       text-decoration: none;
+       animation-name:fadeOutUp;
+       animation-duration: 1s;
+        background-color:rgba(255, 255, 255, 0.432);
+    }
+    .logsign a{
+      padding-left: 20px;
+    }
+    
+    .button1:hover{
+        background-color:rgba(0, 0, 0, 0.432);
+        color: rgb(252, 252, 252);
+    }
+        
+    .ion{
+      padding-left: 90%;
+      padding-top: 5%;
+      
+    
+    }
+    .button2{
+      font-size: xx-large;
+      align-items: flex-end;
+    color: black;
+    border-radius:2rem;
+    padding:0.5rem;
+    padding-top: 0.8rem;
+    background-color: #fff;
+    
+    
+    
+    
+    }
+    .show{
+      align-items: center;
+      text-align: center;
+    }
+    .subtitle{
+      padding: 2rem;
+      position:absolute;
+      top: 50%;
+      margin-left: 20%;
+      letter-spacing: 0.5rem;
+      color: rgb(255, 255, 255);
+      animation-name:fadeOutUp;
+      animation-duration: 1s;
+      max-width:100%;
+      font-family: 'Akaya Telivigala';
+      
+    }
+    .shopname{
+      position:absolute;
+        top: 40%;
+        font-size:100px ;
+        text-align: center;
+        letter-spacing: 0.5rem;
+        color: rgb(255, 250, 250);
+        animation-name:fadeOutUp;
+        animation-duration: 1s;
+        max-width:100%;
+        font-family: 'Akaya Telivigala';
+    }
+    h5{
+      font-size:large;
+      position:absolute;
+      width:3rem;
+      font-size:20px ;
+      text-align: center;
+    }
+    @keyframes fadeOutUp {
+        0% {
+          opacity: 1;
+        }
+      
+        100% {
+          opacity: 0;
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+        }
+      }
+      
+      
+   
+        /*clip-path: polygon(0 0,100% 0,100% 80%,0 100%); */
+  
+        .lot{
+          margin-left: 7%;
+        }
+        
+        .frame1 {
+          float: left;
+          width: 20%;
+          margin: 20px;
+          padding-left: 5%;
+        }
+       
+        
+
+      /*---------login in index page--------------*/
+
+     
+      
+      /* Set a style for all buttons */
+      button {
+        
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        margin: 15px;
+        cursor: pointer;
+        width: 27rem;
+        border-radius:0.5rem;
+      }
+      
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      /* photo from first  */
+      .image,.image1 {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+       
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+    
+      .img1,.img2{
+        position: relative;
+        float: left;
+        margin-left: 2rem;
+        display: block;
+        padding:40px 40px;
+      }
+    
+      .img2:hover .image ,
+      .img1:hover .image{
+        opacity: 0.6;
+      }
+      
+      .img2:hover .middle,
+      .img1:hover .middle {
+        opacity: 1;
+        
+      }
+      .col {
+        animation-name:flip;
+        animation-duration:1s;
+      }
+      
+      /* Center the image and position the close button */
+      
+    
+      
+      /* The Modal (background) */
+     
+
+      /* footer */
+      
+      .mail{
+        color:rgba(0, 0, 0, 0.918);
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .call{
+        color:rgba(0, 0, 0, 0.918);
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .call1{
+      color:rgba(0, 0, 0, 0.918);
+      width: 1.5rem;
+      height: 1.5rem;
+  }
+    .call:hover,
+    .call:active{
+        color: rgb(55, 197, 55);
+    }
+    .call1:hover,
+    .call1:active{
+        color: rgba(65, 122, 228, 0.911);
+    }
+    .mail:hover,
+    .mail:active{
+        color:#dd4b39;
+    }
+    .social-icons li{
+      display: inline-block;
+     
+        float: right;
+        padding: 30px 15px;
+        font-size: 20px;
+        font-style: none;
+    }
+    .social-icons  ul{
+        margin-right: 50px;
+  
+        text-align: center;
+    }
+    .main-nav1 {
+        text-decoration: none;
+        float: left;
+        list-style: none;
+        text-transform: capitalize;
+        padding: 20px 0;
+    }
+    .main-nav1 li {
+        border-bottom: 1.5px solid transparent;
+        display: inline-block;
+        font-size: large;
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+    }
+    .main-nav1 li a:hover,
+    .main-nav1 li a:active{
+        transition:  color 0.2s;
+        color: rgb(185, 176, 176);
+        padding: 8px 0;
+    }
+    .follow-sec{
+      clear: both;
+      background-image:linear-gradient(to right,rgb(0, 0, 0),rgb(255, 255, 255));
+          bottom:0;
+          width:100%;
+          height: 22vh;
+          content: '.';
+          clear: both;
+        
+          display: block;
+      
+      }
+      .about{
+      color: #fff;
+      }
+     .copy{
+       text-align: center;
+       font-size: medium;
+       color: #fff;
+     }
+     .home{
+       text-decoration: none;
+       color: #fff;
+     }
+      
+      /* queries----------------------------*/
+      @media only screen and (max-width:1400px){
+        .shopname {
+            width:100%;
+            text-align: center;
+            font-size: 65px;   
+        }
+        .row{
+          margin-top:5rem;
+        } 
+        .subtitle{
+            font-size:60px;
+        
+            
+        } 
+       
+        
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 43%;
+            font-size: 30px;
+    
+        }
+      
+    
+        .dropbtn{
+          width: 40px;
+          height: 40px;
+          } 
+            
+              
+        
+    }
+   
+    @media only screen and (max-width:1230px){
+      .shopname {
+            width:100%;
+            text-align: center;
+            color: rgb(2, 53, 97);
+            font-size: 50px;
+            padding: 2rem;
+            
+        } 
+        .subtitle{
+            font-size:40px; 
+            padding: 2rem; 
+            margin-left: 20%; 
+        } 
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 40%;
+            font-size: 27px;
+        }
+       
+    
+        .dropbtn{
+          width: 40px;
+          height: 40px;
+          }
+          .img1,.img1 h1 h3{
+            width: 12rem;
+            height: 18rem;
+            font-size: small;
+            margin-left: 65px;
+            display: block;
+            position: relative;
+            padding: 10px 10px; 
+            margin-bottom: 3rem;
+          }}
+    @media only screen and (max-width:1100px){
+      .shopname {
+            width:100%;
+            text-align: center;
+            color: rgb(2, 53, 97);
+            font-size: 50px;
+            padding: 2rem;
+            
+        } 
+        .subtitle{
+            font-size:40px; 
+            padding: 2rem; 
+            margin-left: 20%; 
+        } 
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 40%;
+            font-size: 27px;
+        }
+       
+    
+        .dropbtn{
+          width: 40px;
+          height: 40px;
+          }
+          .img1,.img1 h1 h3{
+            width: 12rem;
+            height: 18rem;
+            font-size: small;
+            margin-left: 45px;
+            display: block;
+            position: relative;
+            padding: 10px 10px; 
+            margin-bottom: 3rem;
+          }}
+
+    @media only screen and (max-width:1000px){
+      .shopname {
+            width:100%;
+            text-align: center;
+            color: rgb(2, 53, 97);
+            font-size: 50px;
+            padding: 2rem;
+            
+        } 
+        .subtitle{
+            font-size:40px; 
+            padding: 2rem; 
+            margin-left: 20%; 
+        } 
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 40%;
+            font-size: 27px;
+        }
+       
+    
+        .dropbtn{
+          width: 40px;
+          height: 40px;
+          }
+          .img1,.img1 h1 h3{
+            width: 12rem;
+            height: 18rem;
+            font-size: small;
+            margin-left: 30px;
+            display: block;
+            position: relative;
+            padding: 10px 10px; 
+            margin-bottom: 3rem;
+          }
+        
+       
+        
+        
+    
+    }
+    @media only screen and (max-width:900px){
+      .shopname {
+            width:100%;
+            text-align: center;
+            color: rgb(2, 53, 97);
+            font-size: 50px;
+            padding: 2rem;
+            
+        } 
+        .subtitle{
+            font-size:40px; 
+            padding: 2rem; 
+            margin-left: 18%; 
+        } 
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 40%;
+            font-size: 27px;
+        }
+       
+    
+        .dropbtn{
+          width: 40px;
+          height: 40px;
+          }
+        
+       
+        
+        
+    
+    }
+    @media only screen and (max-width:850px){
+      .shopname {
+            width:100%;
+            text-align: center;
+            color: rgb(2, 53, 97);
+            font-size: 50px;
+            padding: 2rem;
+            
+        } 
+        .subtitle{
+            font-size:40px; 
+            padding: 2rem; 
+            margin-left: 17%; 
+        } 
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 40%;
+            font-size: 25px;
+        }
+        
+        .dropbtn{
+          width: 40px;
+          height: 40px;
+          }
+          .main-nav1 li{
+            font-size: medium;
+          }
+          .mail{
+            color:rgba(0, 0, 0, 0.918);
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+        .call{
+          color:rgba(0, 0, 0, 0.918);
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+        .call1{
+          color:rgba(0, 0, 0, 0.918);
+            width: 1.3rem;
+            height: 1.3rem;
+      }
+      .img1,.img1 h1 h3{
+        width: 10rem;
+        height: 18rem;
+        font-size: small;
+        margin-left: 15px;
+        display: block;
+        position: relative;
+        padding: 10px 10px;
+        
+      }
+           
+        
+    }
+    @media only screen and (max-width:767px){
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 38%;
+            font-size: 23px;
+            
+        }
+        .shopname {
+            width:100%;
+            text-align: center;
+            color: aliceblue;
+            font-size: 40px;
+            
+            
+        } 
+        .subtitle{
+            font-size:30px;
+            margin-left: 16%;
+            
+        } 
+        
+        .dropbtn{
+          width: 40px;
+          height: 40px;
+          }
+          .img1,.img1 h1 h3{
+            width: 10rem;
+            height: 18rem;
+            font-size: small;
+            margin-left: 15px;
+            display: block;
+            position: relative;
+            padding: 10px 10px;
+            
+          }
+          
+         
+            
+       
+    }
+    @media only screen and (max-width:720px){
+      .button1{
+          text-align: center;
+          align-items: center;
+          left: 38%;
+          font-size: 21px;
+          
+      }
+      .shopname {
+          width:100%;
+          text-align: center;
+          color: aliceblue;
+          font-size: 40px;
+          
+          
+      } 
+      .subtitle{
+          font-size:30px;
+          margin-left: 15%;
+          
+      }
+      
+      .dropbtn{
+        width: 40px;
+        height: 40px;
+        }
+        .img1,.img1 h1 h3{
+          width: 10rem;
+          height: 18rem;
+          font-size: small;
+          margin-left: 15px;
+          display: block;
+          position: relative;
+          padding: 10px 10px;
+          
+        }
+        .social-icons li{
+          padding: 20px 10px ;
+        }
+      
+  }
+    @media only screen and (max-width:620px){
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 38%;
+            font-size: 21px;
+            
+        }
+        .shopname {
+            width:100%;
+            text-align: center;
+            color: aliceblue;
+            font-size: 40px;
+            
+            
+        } 
+        .social-icons li{
+          
+          padding: 20px 7px ;
+        }
+        .social-icons  ul{
+          margin-right: 10px;
+          text-align: center;
+      }
+        .main-nav1 li {
+         
+          font-size: medium;
+          
+          margin-left: 10px;
+      }
+        .subtitle{
+
+            font-size:30px;
+            margin-left: 15%;
+            
+        }
+        
+        .dropbtn{
+          width: 40px;
+          height: 40px;
+          }
+          .img1,.img1 h1 h3{
+            width: 10rem;
+            height: 18rem;
+            font-size: small;
+            margin-left: 15px;
+            display: block;
+            position: relative;
+            padding: 10px 10px;
+            
+          }
+        
+    }
+    
+    @media only screen and (max-width:495px){
+         
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 36%;
+            font-size: 18px;
+            
+        }
+        .img1{
+            width: 17rem;
+        } 
+        .shopname {
+            width:100%;
+            text-align: center;
+            color: aliceblue;
+            font-size: 40px;
+            
+            
+        } 
+        .main-nav1 li {
+         
+          font-size: smaller;
+          
+          margin-left: 10px;
+      }
+      .mail{
+        color:rgba(0, 0, 0, 0.918);
+        width: 1rem;
+        height: 1rem;
+    }
+    .call{
+        color:rgba(0, 0, 0, 0.918);
+        width: 1rem;
+        height: 1rem;
+    }
+    .call1{
+      color:rgba(0, 0, 0, 0.918);
+      width: 1rem;
+      height: 1rem;
+  }
+        .subtitle{
+            font-size:30px;
+            margin-left: 15%;
+            
+        } 
+        
+        
+      
+        .dropbtn{
+          width: 40px;
+          height: 40px;
+          }
+          .img1,.img1 h1 h3{
+            width: 10rem;
+            height: 18rem;
+            font-size: small;
+            margin-left: 15px;
+            display: block;
+            position: relative;
+            padding: 10px 10px;
+            
+          }
+          
+        
+       
+           
+       
+    }
+    @media only screen and (max-width:430px){
+         
+      .button1{
+          text-align: center;
+          align-items: center;
+          left: 36%;
+          font-size: 18px;
+          
+      }
+      .img1{
+          width: 17rem;
+      } 
+      .shopname {
+          width:100%;
+          text-align: center;
+          color: aliceblue;
+          font-size: 40px;
+          
+          
+      } 
+      .main-nav1 li {
+       
+        font-size: smaller;
+        
+        margin-left: 10px;
+    }
+    .mail{
+      color: #fff;
+      width: 1rem;
+      height: 1rem;
+  }
+  .call{
+    color: #fff;
+      width: 1rem;
+      height: 1rem;
+  }
+  .call1{
+    color: #fff;
+    width: 1rem;
+    height: 1rem;
+}
+      .subtitle{
+          font-size:30px;
+          margin-left: 15%;
+          
+      } 
+      
+      
+    
+      .dropbtn{
+        width: 40px;
+        height: 40px;
+        }
+        .img1,.img1 h1 h3{
+          width: 10rem;
+          height: 18rem;
+          font-size: small;
+          margin-left: 15px;
+          display: block;
+          position: relative;
+          padding: 10px 10px;
+          
+        }
+        .social-icons{
+          width: 15rem;
+          
+        }
+        .follow-sec{
+          height: 30vh;
+        }
+        
+      
+     
+         
+     
+  }
+    @media only screen and (max-width:366px){
+       
+        .subtitle{
+            font-size:25px;
+        
+            
+        } 
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 34%;
+            font-size: 17px;
+            
+        }
+        .shopname {
+            width:100%;
+            text-align: center;
+            color: aliceblue;
+            font-size: 25px;
+            
+            
+        } 
+        .subtitle{
+            font-size:20px;
+            margin-left: 14%;
+            
+        } 
+        .button1{
+            text-align: center;
+            align-items: center;
+            left: 30%;
+            font-size: 15px;
+            
+        }
+        .letsdiscover{
+            size: 10%;
+        }
+        .dropbtn{
+          width: 40px;
+          height: 40px;
+          }
+          .img1,.img1 h1 h3{
+            width: 9rem;
+            height: 15rem;
+            font-size: small;
+            margin-left: 5px;
+            display: block;
+            position: relative;
+            padding: 10px 20px;
+            
+          }
+    }
+    @media only screen and (max-width:330px){
+     
+    .subtitle{
+        font-size:25px;
+    
+        
+    } 
+    .button1{
+        text-align: center;
+        align-items: center;
+        left: 34%;
+        font-size: 17px;
+        
+    }
+    .shopname {
+        width:100%;
+        text-align: center;
+        color: aliceblue;
+        font-size: 25px;
+        
+        
+    } 
+    .subtitle{
+        font-size:20px;
+        margin-left: 13%;
+        
+    } 
+    .button1{
+        text-align: center;
+        align-items: center;
+        left: 30%;
+        font-size: 15px;
+        
+    }
+ 
+    .letsdiscover{
+        size: 10%;
+    }
+    .dropbtn{
+      width: 40px;
+      height: 40px;
+      }
+      .img1,.img1 h1 h3{
+        width: 8rem;
+        height: 15rem;
+        font-size: small;
+        margin-left: 5px;
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+        
+      }
+      .copy{
+        font-size: small;
+      }
+      .main-nav1{
+        font-size: smaller;
+      }
+}
+
+    @media only screen and (max-width:290px){
+      .shopname {
+        width:100%;
+        text-align: center;
+        color: aliceblue;
+        font-size: 20px;
+        
+        
+    } 
+    .subtitle{
+        font-size:25px;
+    
+        
+    } 
+    .button1{
+        text-align: center;
+        align-items: center;
+        left: 34%;
+        font-size: 17px;
+        
+    }
+ 
+    .subtitle{
+        font-size:20px;
+        margin-left: 1%;
+        
+    } 
+   
+    .button1{
+        text-align: center;
+        align-items: center;
+        left: 30%;
+        font-size: 15px;
+        
+    }
+    .letsdiscover{
+        size: 10%;
+    }
+    .dropbtn{
+      width: 40px;
+      height: 40px;
+      }
+      .img1,.img1 h1 h3{
+        width: 8rem;
+        height: 15rem;
+        font-size: small;
+        margin-left: -07px;
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+        
+      }
+}
+      @media only screen and (max-width:260px){
+        .shopname {
+          width:100%;
+          text-align: center;
+          color: aliceblue;
+          font-size: 20px;
+          
+          
+      } 
+      
+      .subtitle{
+          font-size:25px;
+          margin-left: -2%;
+          
+      } 
+    
+      .subtitle{
+          font-size:20px;
+      
+          
+      } 
+      .button1{
+          text-align: center;
+          align-items: center;
+          left: 30%;
+          font-size: 15px;
+          
+      }
+      .para,.para2{
+        font-size: larger;
+      }
+     .row1{
+       height: 20px;
+     }
+      .letsdiscover{
+          size: 10%;
+      }
+      .dropbtn{
+      width: 40px;
+      height: 40px;
+      }
+      .dropdown-content {
+
+        width: 30px;
+        height: 120px;
+      }
+      .img1,.img1 h1 h3{
+        width: 7rem;
+        height: 13rem;
+        font-size: small;
+        margin-left: -07px;
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+        
+      }
+      .main-nav1{
+        font-size: small;
+      }
+      .main-nav1 a{
+        margin-left: 1rem;
+      }
+      .social-icons li:first-child{
+        margin-right: 4rem;
+      }
+    
+     
+      
+  }
+
+    </style>
+    
+</head>
+<body>
+  
+    <header class="header clearfix">
+      <div class="dropdown">
+        <button class="dropbtn"><ion-icon name="menu"></ion-icon></button>
+        <div class="dropdown-content">
+          <a href="first">collection</a>
+          <a href="#prod">product</a>
+          <a href="#foot">learn more</a>
+        </div>
+      </div>
+      
+      <div class="show">
+      <div  class="title">
+      <h2 class="shopname"><span style="color: rgb(255, 255, 255);">DHAVA</span>MANI</h2>
+    </div>
+    <div>
+      <h2 class="subtitle"><span style="color: rgb(255, 255, 255);">GIFTS </span>AND FRAME</h2>
+    </div>
+      <div class="letsdiscover">
+    <div class="logsign">
+      <a  href='signup' class="button1">SIGNUP</a>
+      <a class=" button1" href="login2">LOGIN</a>
+    </div>
+
+         
+        
+      </div>
+        
+    </div>
+     
+    </header>
+    <section class="section2 clearfix"id="prod">
+      
+      <div class="bhuddha3">
+  
+        <div class="row">
+          
+           {% for fir in second %}
+          <div class="img1 col">
+        
+            <a href='first' ><img class="image" src="static/img/{{fir.img}}.png"></a>
+            <div >
+              <h2>{{fir.title}}</h2><br>
+              <h3>{{fir.price}} - <s>{{fir.oldprice}}</s></h3>
+            </div>
+            
+           </div>
+           {% endfor %}
+           
+        </div>
+      </div>
+  
+  </section>
+  <section class="section2 clearfix">
+    <div class='framesec'>
+  
+    
+    
+    </div>
+    <div class="bhuddha3">
+  
+      <div class="row1">
+        <div class="saree1">
+          <marquee scrollamount="10%"><ion-icon name="play-back" class="icon" ></ion-icon><strong >&nbsp;&nbsp;10 DAYS</strong><strong> &nbsp;&nbsp;
+           OFFERS </strong>&nbsp;&nbsp;<ion-icon name="play-forward" class="icon"></ion-icon></marquee>
+         </div>
+         {% for fir in first %}
+         <div data-aos="flip-left"  class="img1">
+       
+           <a href='first' ><img class="image" src="static/img/{{fir.img}}.png"></a>
+           <div>
+             <h2>{{fir.title}}</h2><br>
+             <h3>{{fir.price}} - <s>{{fir.oldprice}}</s></h3>
+           </div>
+           
+          </div>
+          {% endfor %}
+  
+      </div>
+    </div>
+  
+  </section>
+  
+    
+   
+
+ 
+
+
+ <footer class="follow-sec " id="foot">
+  <nav>
+    <div class="row1" >
+      
+         <ul class="main-nav1 ">
+         <li><a href="#" class="home">About us</a></li>
+         <li><a href="signup" class="home">Signup</a></li>
+         <li><a href="login2" class="home">Login</a></li>
+         <li><a href="#" class="home">contact us</a></li>
+         <li><a href="home" class="home">home</a></li>
+         </ul>
+     </div>
+   </nav>
+<div class="social-icons clearfix">
+  <ul>
+    <li><a href="home"><ion-icon  class="mail" name="mail"></ion-icon></a></li>
+    <li><a href="#"><ion-icon class="call"name="call"></ion-icon></a></li>
+    <li><a href="#"><ion-icon class="call1" name="logo-twitter"></ion-icon></a></li>
+    <li><a href="#"><ion-icon class="call" name="logo-whatsapp"></ion-icon></a></li>
+  </ul>
+</div>
+<div class="copy">
+<small >&copy; Copyright 2021 Dhavamani. All Rights Reserved</small> 
+</div>
+</footer>
+<script
+src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="{% static 'aos.js' %}"></script>
+<script type="text/javascript">
+    AOS.init({
+        duration:1000,
+    });
+  </script>
+    
+</body>
+</html>
