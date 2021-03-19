@@ -1,0 +1,36 @@
+@media only screen and (max-width: 580px) {
+    #navbar {
+        height:40%;
+      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+    #navbar a {
+      float: none;
+      font-size:small;
+      display: block;
+      text-align: left;
+      padding: 6px;
+    }
+    #navbar-right {
+      float: none;
+      
+    }
+    .logo1{
+        font-size:20px;
+    }
+  }
+@media only screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+}
+.model{
+    padding-top: 50rem;
+}
+ 

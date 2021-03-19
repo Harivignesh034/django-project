@@ -1,0 +1,222 @@
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    
+    
+    
+     
+}
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 1px solid #fff;
+  border-radius: 20%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
+.header{
+    height: 95vh;
+    max-width:100%;
+    background-image:linear-gradient(to right,rgba(75, 72, 72, 0.322),rgba(0, 0, 0, 0.226)), url(static/img/thalaiyatti.jpg);                       
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    
+    
+}
+.letsdiscover{
+  text-align: center;
+}
+.button1{ 
+    color:black;
+    letter-spacing: 0.5rem;
+    font-weight: 900;
+    font-family: 'Akaya Telivigala';
+    font-size:1.5rem;
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    border-radius: 10px;
+   padding: 0.6rem;
+   text-decoration: none;
+   animation-name:fadeOutUp;
+   animation-duration: 2s;
+    background-color:rgba(255, 255, 255, 0.432);
+}
+
+.button1:hover{
+    background-color:rgba(0, 0, 0, 0.432);
+    color: rgb(252, 252, 252);
+}
+    
+.ion{
+  padding-left: 90%;
+  padding-top: 5%;
+  
+
+}
+.button2{
+  font-size: xx-large;
+  align-items: flex-end;
+color: black;
+border-radius:2rem;
+padding:0.5rem;
+padding-top: 0.8rem;
+background-color: #fff;
+
+
+
+
+}
+.show{
+  align-items: center;
+  text-align: center;
+}
+.subtitle{
+  padding: 2rem;
+  position:absolute;
+  top: 50%;
+  letter-spacing: 0.5rem;
+  color: rgb(255, 255, 255);
+  animation-name:fadeOutUp;
+  animation-duration: 2s;
+  max-width:100%;
+  font-family: 'Akaya Telivigala';
+  
+}
+h2{
+  position:absolute;
+    top: 40%;
+    font-size:100px ;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    color: rgb(255, 250, 250);
+    animation-name:fadeOutUp;
+    animation-duration: 2s;
+    max-width:100%;
+    font-family: 'Akaya Telivigala';
+}
+@keyframes fadeOutUp {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  .section2{
+    height: 90vh;
+   /* clip-path: polygon(0 0,100% 0,100% 80%,0 100%); */
+    
+    
+}
+.section3{
+  height: 90vh;
+    /*clip-path: polygon(0 0,100% 0,100% 80%,0 100%); */
+}
+.text {
+  background-color:#000;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 12px 24px;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.img2 ,.img1{
+  position: relative;
+  width: 50%;
+}
+.img2:hover .image ,
+.img1:hover .image{
+  opacity: 0.6;
+}
+
+.img2:hover .middle,
+.img1:hover .middle {
+  opacity: 1;
+  
+}
+.img1 {
+  float: left;
+  width:20rem;
+  display: block;
+  padding:40px 40px;
+}
+.img2 {
+  float:right;
+  width:20rem;
+  display: block;
+  padding:40px 40px;
+}
+.para{
+  float:left;
+  width:45rem;
+  font-size: xx-large;
+  padding: 40px 20px;
+}
+.para2{
+  float:left;
+  width:45rem;
+  font-size: xx-large;
+  padding: 40px 20px;
+}
+.section4{
+    background-image: url(img/soft-toys.png);
+    background-size:cover;
+    clip-path: polygon(0 30%,100% 0,100% 100%,0 100%);
+    height:70vh; 
+}
+
+.photo{
+    height: 30rem;
+    width:30rem;
+}
+.column {
+    float: left;
+    width: 33%;
+    padding: 5px;
+    cursor: none;
+  }
+  /* index frame works*/
